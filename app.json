@@ -1,0 +1,39 @@
+{
+    "name": "𝐓𝐞𝐱𝐭 Uploader scammer",
+    "description": "Download videos from various websites using this telegram bot",
+    "logo": "https://graph.org/file/5af356000ab4f88312c0b.jpg",
+    "keywords": [
+        "text-video",
+        "video-extract",
+        "pyrogram"
+    ],
+    "repository": "https://github.com/mohitbooraget/New_Txt_Random",
+    "success_url": "https://telegram.me/imendaxpublic",
+    "stack": "container",
+    "env": {
+        "API_ID": {
+            "description": "Enter your API id You can generate by https://my.telegram.org/auth",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Enter your API Hash You can generate by https://my.telegram.org/auth",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "Enter your bot token You can generate by @BotFather",
+            "required": true
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "https://github.com/amivin/aria2-heroku.git"
+        },
+        {
+            "url": "heroku/python"
+        },       
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ]
+    }
